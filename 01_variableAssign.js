@@ -20,7 +20,7 @@ var age="21";
 console.log("Age:",age);
 var address="Sangola";
 console.log("Address:",address);
-var pinCode="413306";
+var pinCode="413307";
 console.log("Pincode:",pinCode);
 var gender="Male";
 console.log("Gender:",gender);
