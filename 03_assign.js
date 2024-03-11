@@ -1,4 +1,4 @@
-console.log(" ========== Step - 1 =========" );
+console.log(" ========== Step 1 =========" );
 
 
 function myName(){
@@ -14,7 +14,7 @@ function myLastName() {
 myLastName();
 
 
-console.log(" ========== Step - 2 ==========");
+console.log(" ========== Step 2 ==========");
 
  function personalDetails(firstName,lastName,collegeName){
     console.log("My First Name:",firstName);
@@ -24,7 +24,7 @@ console.log(" ========== Step - 2 ==========");
 } 
 personalDetails("Abhishek","More","Fabtech, Sangola");
 
-console.log("========== Step - 3 ==========");
+console.log("========== Step 3 ==========");
 
 function swapValues(arg1,arg2) {
 console.log("===== Before Swap =====");
@@ -52,7 +52,7 @@ function swapValues(arg1,arg2) {
     }
     swapValues(1000,2000)
 
-    console.log("========== Step - 4 ==========");
+    console.log("========== Step 4 ==========");
 
     function addThreeValues(n1,n2,n3) {
         console.log("Arguments: ", n1, n2, n3);
