@@ -15,7 +15,7 @@ console.log("Type of Bank Name:", typeofBankName);
 
 console.log("********* Step 2 **********");
 
-var Marks= 90;
+var Marks="90%" ;
 console.log("Value Of Marks:", Marks);
 var typeofMarks = typeof Marks;
 console.log("Type of Marks:",typeofMarks);
