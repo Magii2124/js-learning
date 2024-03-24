@@ -6,7 +6,7 @@ console.log('******************** STEP 2 ********************');
 console.log(`First element of given arrayNumber :${arrayNumbers[0]}`);
 console.log(`Last element of given arrayNumber :${arrayNumbers[arrayNumbers.length-1]}`);
 console.log('******************** STEP 3 *******************');
-console.log(`Third last element using Length property : ${arrayNumbers[arrayNumbers.length-3]}`);
+console.log(`Third last element using Length property is : ${arrayNumbers[arrayNumbers.length-3]}`);
 console.log('******************** STEP 4 ********************');
 console.log(`All even numbers from an array is :`);
 for (const iterator of arrayNumbers) {
