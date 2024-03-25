@@ -1,19 +1,58 @@
-function operator(JavaScript,GoogleChrome,DeveloperSmart) {
-  
-    
+<<<<<<< HEAD
+console.log("_____________________Step 1___________________");
+function squareOfWordLength(arg1)
+{
+    var len=arg1.length;//
+    var n1= len;
+    var n2=2;
+    result=n1**n2;
+    return result;
 }
-console.log("************************** Step 1 **************************");
+squareOfWordLength("JavaScript");
+console.log(`Length square of JavaScript is ${result} `);
+squareOfWordLength("Google Chrome");
+console.log(`Length square of Google Chrome is ${result} `);
+squareOfWordLength("Developer Smart");
+console.log(`Length square of Developer Smart is ${result} `);
 
+console.log("_____________________Step 2___________________");
+function showLength()
+{
+    var str="I am Angular Developer";
+    var a=str.length;
+    console.log(`String length is ${a}`);
+    var stringDivide=a/4;
+    console.log(`String length divided by total no words ${stringDivide}`);
+    var mul=a*4;
+    console.log(`String length multiplied by total no words ${mul}`);
+}
+=======
+console.log("_____________________Step 1___________________");
+function squareOfWordLength(arg1)
+{
+    var len=arg1.length;//
+    var n1= len;
+    var n2=2;
+    result=n1**n2;
+    return result;
+}
+squareOfWordLength("JavaScript");
+console.log(`Length square of JavaScript is ${result} `);
+squareOfWordLength("Google Chrome");
+console.log(`Length square of Google Chrome is ${result} `);
+squareOfWordLength("Developer Smart");
+console.log(`Length square of Developer Smart is ${result} `);
 
-console.log('Length Square of Word "javaScript" is: 100');
-console.log('Length square of Word "Google Chrome" is: 169');
-console.log('Length square of Word "Developer Smart" is:  225');
-
-console.log("************************** Step 2 **************************");
-
-
-console.log('Length of Give String is: 22');
-console.log('Total Number Available in Given String is: 4');
-
-console.log("Division after String length divide by total no.of word is: 5.5");
-console.log("Multiplication after String length multiplied by total no.of word is: 88");
+console.log("_____________________Step 2___________________");
+function showLength()
+{
+    var str="I am Angular Developer";
+    var a=str.length;
+    console.log(`String length is ${a}`);
+    var stringDivide=a/4;
+    console.log(`String length divided by total no words ${stringDivide}`);
+    var mul=a*4;
+    console.log(`String length multiplied by total no words ${mul}`);
+}
+>>>>>>> 19f3e5cb7636a59644b7aae4bf96522ef90ccdd8
+showLength();
