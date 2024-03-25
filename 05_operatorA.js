@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<<<<<<< HEAD 
 console.log("_____________________Step 1___________________");
 function squareOfWordLength(arg1)
 {
