@@ -1,7 +1,6 @@
-const jsonString = `
-{
+const employeeJson = {
   "name": "Aleix Melon",
-  "id": "E08245",
+  "id": "E00245",
   "role": ["Dev", "DBA"],
   "age": 23,
   "doj": "11-12-2019",
@@ -12,17 +11,19 @@ const jsonString = `
     "country": "Austria"
   },
   "referred-by": "E0012"
-}`;
+};
 
-const obj = JSON.parse(jsonString);
+// Convert JSON to object
+const employee = JSON.parse(JSON.stringify(employeeJson));
 
-// Log on console role → DEV
-console.log("Role:", obj.role[0]);
+// Log role
+console.log("Role:", employee.role[0]);
 
-// Log only last name "Melon"
-const fullName = obj.name.split(" ");
-console.log("Last Name:", fullName[1]);
+// Log last name
+const fullNameArray = employee.name.split(" ");
+const lastName = fullNameArray[fullNameArray.length - 1];
+console.log("Last Name:", lastName);
 
-// Log only joining year of employee 2019
-const joiningDate = obj.doj.split("-");
-console.log("Joining Year:", joiningDate[2]);
+// Log joining year
+const joiningYear = new Date(employee.doj).getFullYear();
+console.log("Joining Year:", joiningYear);
