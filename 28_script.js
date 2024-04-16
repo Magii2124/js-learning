@@ -33,3 +33,20 @@ techStackElement.innerHTML = "My Expertise in UI";
 
 console.log('Changing CSS ');
 techStackElement.style.color = "orange";
+console.log('Remove an element');
+const skillUlNode = document.querySelector('#skill');
+const JsLiNode = document.querySelector('#js');
+skillUlNode.removeChild(JsLiNode);
+
+
+
+
+function eventClick() {
+    console.log("Hey.. he clicked me...");
+    
+}
+const addButton = document.querySelector('#add');
+addButton.addEventListener('click',()=>{
+    console.log('Add button click...');
+});
+
