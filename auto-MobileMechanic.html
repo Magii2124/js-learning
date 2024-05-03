@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: red;
+        }
+
+        body {
+
+            background-color: rgb(0, 0, 15);
+
+            color: rgb(249, 249, 249);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+        }
+
+        header {
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+
+
+        }
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+
+            list-style: none;
+            margin: 0 23px;
+            font-size: 17px;
+
+        }
+
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 160);
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 30px 64px;
+        }
+
+
+        .left {
+            font-size: 1.2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: -4px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+
+            font-size: 2.5rem;
+
+        }
+
+        .leftsection p {
+            margin-left: -370px;
+            margin-bottom: -189px;
+            margin-top: -268px;
+            filter: contrast(2.5);
+        }
+
+
+        #car-img {
+            margin-left: 230px;
+            filter: brightness(4.5);
+        }
+
+        .rightsection img {
+            width: 139%;
+            height: 192px;
+            margin-left: -119px;
+            color: rgb(8, 253, 245);
+            filter: brightness(4.5);
+
+        }
+
+
+        -->.purple {
+            color: rgb(8, 216, 244);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .secondsection {
+            /* display: flex; */
+            max-width: 100vw;
+            margin: 10px;
+
+            background-color: rgb(26, 26, 62);
+            /* width: 100vw; */
+        }
+
+        .secondsection h1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 40px;
+            /* display: inline; */
+            /* padding: 5px;
+            text-align: center;
+            */
+
+        }
+
+        .templates {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0px 10px;
+            grid-column-gap: 40px;
+            grid-row-gap: 10px;
+            height: 10px;
+
+
+        }
+
+        .item img {
+            width: 100%;
+            height: 200px;
+
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            transition: 0.2s ease;
+        }
+
+        .item2 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+
+
+        }
+
+        .item img:hover {
+            transform: scale(1.04);
+        }
+
+        .item h3 {
+            padding: 5px;
+            text-align: center;
+            font-size: 25px;
+
+        }
+
+        .item p {
+            padding: 5px;
+            text-align: center;
+
+        }
+
+        button {
+            padding: 5px;
+            border: none;
+            outline: none;
+            background-color: #00abf0;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 20px;
+            display: block;
+            margin: 25px auto;
+
+        }
+
+        #xyz img {
+
+            filter: brightness(1);
+            position: sticky;
+            background-repeat: no-repeat;
+
+            width: 100%;
+            height: 416px;
+
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            transition: 0.2s ease;
+            z-index: -5;
+
+            visibility: inherit;
+            opacity: 0.7;
+
+        }
+
+
+
+
+        @media screen and (max-width:1000px) {
+            .templates {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+
+                <h1> AutoMob-Mechanic</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <a href="explore-services.html">Home</a> &nbsp;&nbsp;&nbsp;
+                    <a href="our services.html">Services</a> &nbsp;&nbsp;&nbsp;
+                    <a href="preventive-maintence-service.html">Preventive-Maintenance </a> &nbsp;&nbsp;&nbsp;
+                    <a href="body-repair-service.html">Body-Repair </a> &nbsp;&nbsp;&nbsp;
+                    <a href="car-care service.html">Car-Care </a> &nbsp;&nbsp;&nbsp;
+                    <a href="booking.html">Booking</a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="xyz">
+
+        <img src="BMW.png" alt="">
+        <section class="firstsection">
+            <div class="leftsection">
+
+                <!-- <img id="car-img" src="car 1.png"> -->
+                <!-- <img class="item2" src="car 1.png"> -->
+
+
+                <p> Welcome To<br> <span class="purple">AutoMob-Mechanic</span><br>
+                    Unlock Your Journey, <br> Drive Uniqueness...</p>
+            </div>
+
+            <!-- <div class="rightsection">
+                
+            </div> -->
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>
+                Services
+            </h1>
+            <div class="templates">
+                <div class="item">
+                    <img src="home1.jpg" alt="">
+                    <h3>Explore Services</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptas dolorem sunt sed
+                            saepe harum magni pariatur! Odio suscipit et, officiis accusamus cum assumenda laborum sunt
+                            saepe hic fugiat voluptas.</p>
+                        <button type="button"><a href="explore-services.html">Read More</a></button>
+
+
+
+                </div>
+                <div class="item">
+                    <img src="booking.jpg" alt="">
+                    <h3>Booking</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptas dolorem sunt sed
+                            saepe harum magni pariatur! Odio suscipit et, officiis accusamus cum assumenda laborum sunt
+                            saepe hic fugiat voluptas.</p>
+                        <button><a href="booking.html">Read More</a></button>
+                </div>
+
+                <div class="item">
+                    <img src="preventive-measures.jpg" alt="">
+                    <h3>Preventive-Maintenance</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptas dolorem sunt sed
+                            saepe harum magni pariatur! Odio suscipit et, officiis accusamus cum assumenda laborum sunt
+                            saepe hic fugiat voluptas.</p>
+                        <button><a href="preventive-maintence-service.html">Read More</a></button>
+                </div>
+                <div class="item">
+                    <img src="car-care-service.png" alt="">
+                    <h3>Car Care Service</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptas dolorem sunt sed
+                            saepe harum magni pariatur! Odio suscipit et, officiis accusamus cum assumenda laborum sunt
+                            saepe hic fugiat voluptas.</p>
+                        <button><a href="car-care service.html">Read More</a></button>
+                </div>
+                <div class="item">
+                    <img src="body-repair.jpg" alt="">
+                    <h3>Body Repair Service</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptas dolorem sunt sed
+                            saepe harum magni pariatur! Odio suscipit et, officiis accusamus cum assumenda laborum sunt
+                            saepe hic fugiat voluptas.</p>
+                        <button><a href="body-repair-service.html">Read More</a></button>
+                </div>
+
+                <div class="item">
+                    <img src="our services 3.jpg" alt="">
+                    <h3>Our Services</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptas dolorem sunt sed
+                            saepe harum magni pariatur! Odio suscipit et, officiis accusamus cum assumenda laborum sunt
+                            saepe hic fugiat voluptas.</p>
+                        <button> <a href="our services.html">Read More</a></button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+
+</html>
