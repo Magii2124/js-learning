@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #8bc6ec;
+            background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+        }
+        
+        .calculator {
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .calculator-keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        
+        .key {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #e0e0e0;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        
+        .key:hover {
+            background-color: #d5d5d5;
+        }
+        
+        .key:active {
+            background-color: #c5c5c5;
+        }
+        
+        .key-operator {
+            background-color: #f5f5f5;
+        }
+        
+        .key-operator:hover {
+            background-color: #e5e5e5;
+        }
+        
+        .key-operator:active {
+            background-color: #d5d5d5;
+        }
+        
+        .key-equal {
+            grid-column: 1 / -1;
+            border-radius: 25px;
+        }
+        
+        .key-equal:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .key-equal:active {
+            background-color: #d5d5d5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <div class="calculator-keys">
+            <button class="key key-0" value="1">1</button>
+            <button class="key key-1" value="2">2</button>
+            <button class="key key-2" value="3">3</button>
+            <button class="key key-3" value="4">4</button>
+            <button class="key key-4" value="5">5</button>
+            <button class="key key-5" value="6">6</button>
+            <button class="key key-6" value="7">7</button>
+            <button class="key key-7" value="8">8</button>
+            <button class="key key-8" value="9">9</button>
+            <button class="key key-9" value="0">0</button>
+            <button class="key key-dot" value=".">.</button>
+            <button class="key key-operator" value="+">+</button>
+            <button class="key key-operator" value="-">-</button>
+            <button class="key key-operator" value="*">*</button>
+            <button class="key key-operator" value="/">/</button>
+            <button class="key key-equal" value="=">=</button>
+        </div>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
