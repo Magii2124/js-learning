@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: rgb(8, 226, 88);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          }
+          body {
+            background-color: #f2f2f2;
+          }
+        .container {
+            background-color: #f0f2ed;
+            height: 285px;
+            width: 400px;
+            margin: 50px auto;
+            padding: 0px 15px;
+            border-radius: 7px;
+            box-shadow: rgba(72, 6, 6, 0.35) 0px 5px 15px;
+            font-weight: 600;
+            text-align: center;
+          }
+       #title{
+        color: rgb(28, 255, 255);
+         text-align:center; 
+         font-family: "Varela Round", sans-serif; 
+       }
+
+
+       
+       .percentage{
+        color: darkcyan;
+        font-weight: bold;
+        font-family: "Varela Round", sans-serif;
+        padding-left: 10px;
+       }
+       .mark{
+        color: darkcyan;
+        font-weight: bolder;
+        font-family: "Varela Round", sans-serif;
+        padding-left: 10px;
+       
+
+       }
+       button {
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 200px;
+        border: none;
+        height: 28px;
+        color: #ffffff;
+        background-color: #0bfc1b;
+      }
+      button:hover {
+        color: rgb(108, 243, 67);
+      }
+       #label{
+        width: 400px;
+        margin-left: 10px;
+        font-weight: bold;
+        border-color: blueviolet;
+        
+       }
+       button[type="submit"]:hover{
+        background-color: bisque;
+       }
+       
+    </style>
+  </head>
+
+  <body>
+   <div class="container">
+    <h2>Discount Calculator</h2>
+    <p>Enter the Bill amount and discount in percentage</p>
+    <label for="billAmount">Bill Amount</label><br />
+    <input type="number" name="billAmount" id="billAmount" /><br />
+    <label for="DiscountPercentage">Discount Percentage</label><br />
+    <input
+      type="number"
+      name="DiscountPercentage"
+      id="discountPercentage"
+    /><br />
+    <button type="submit">Calculate</button>
+    <p id="tDisAmt">Total Discount Amount</p>
+  </div>
+
+    <script>
+        const btn = document.querySelector("button");
+        btn.addEventListener("click", () => {
+          const billAmount = document.querySelector("#billAmount").value;
+          const discountPercentage = document.querySelector("#discountPercentage").value;
+          const tDisAmt=document.querySelector('#tDisAmt');
+          let totalDiscount=billAmount*(discountPercentage/100);
+          tDisAmt.innerHTML=`Total Discount Amount :${totalDiscount}`;
+      });
+    </script>
+  </body>
+</html>
